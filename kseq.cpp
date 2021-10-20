@@ -2,6 +2,7 @@
 #include <cstdio>
 #include "kseq.hpp"
 
+namespace fxtract {
 kseq::kseq()
 {
     this->last_char = 0;
@@ -64,3 +65,5 @@ std::ostream& operator<<(std::ostream& out, kseq& mate) {
     }
     return out;
 }
+} // namespace fxtract
+

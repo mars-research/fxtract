@@ -31,8 +31,8 @@
 
 /*Converted into template classes by CTS 11DEC2014*/
 
-#ifndef AC_KSEQ_H
-  #define AC_KSEQ_H
+#ifndef FXTRACT_KSEQ_HPP
+#define FXTRACT_KSEQ_HPP
 
 #define HAVE_ZLIB  1
 #define HAVE_BZIP2 0
@@ -42,6 +42,7 @@
 #include <cstdlib>
 #include <unistd.h>
 
+namespace fxtract {
 #if HAVE_ZLIB
 #include <zlib.h>
 class FunctorZlib 
@@ -251,5 +252,6 @@ private:
     ret_t f;
     ReadFunction readfunc;
 };
+} // namespace fxtract
 
-#endif
+#endif // FXTRACT_KSEQ_HPP
